@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{5B965F96-1A1D-474B-9590-07664A62CCF1}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BusinessLayer</RootNamespace>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <AssemblyName>BusinessLayer</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -20,33 +20,123 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Database Layer">
+      <HintPath>..\Database Layer\bin\Debug\Database Layer.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objUserMaster.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objReadBarcodeCoacher.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objHoloidayCalender.cs" />
+    <Compile Include="Business_Layer\clsManualLogEntry.cs" />
+    <Compile Include="Business_Layer\clsBrowsData.cs" />
+    <Compile Include="Business_Layer\CalendarColumn.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objCancelInvoice.cs" />
+    <Compile Include="Business_Layer\clsBluedGroupMaster.cs" />
+    <Compile Include="Business_Layer\clsAuditLog.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objInvoice.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objAutoGenerator.cs" />
+    <Compile Include="Business_Layer\clsTax.cs" />
+    <Compile Include="Business_Layer\clsStudentClassTimes.cs" />
+    <Compile Include="Business_Layer\clsInvoice.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objClassMaster.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objBluedGroupMaster.cs" />
+    <Compile Include="Business_Layer\clsMasterReport.cs" />
+    <Compile Include="Business_Layer\clsVAT.cs" />
+    <Compile Include="Business_Layer\clsUpdateCoachByLevel.cs" />
+    <Compile Include="Business_Layer\clsInvoiceTaxAmount.cs" />
+    <Compile Include="Business_Layer\clsAttendanceProcessCoacher.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objUpdateCoachByLevel.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objReportMaster.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objInvoiceTaxAmount.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objActiveCancalHistory.cs" />
+    <Compile Include="BusinessLayer\HMergedCell.cs" />
+    <Compile Include="Business_Layer\clsPaymentDeatils.cs" />
+    <Compile Include="Business_Layer\clsLeavalChangeClassTime.cs" />
+    <Compile Include="Business_Layer\clsDuePayStudent.cs" />
+    <Compile Include="Business_Layer\clsActiveCancalHistory.cs" />
+    <Compile Include="Business_Layer\clsPaymentMethod.cs" />
+    <Compile Include="Business_Layer\clsCoacherMaster.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objLocation.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objConfirmStudentAttendance.cs" />
+    <Compile Include="Business_Layer\clsSystemUpdate.cs" />
+    <Compile Include="Business_Layer\clsReadBarcodeCoacher.cs" />
+    <Compile Include="Business_Layer\clsCompanyMaster.cs" />
+    <Compile Include="Business_Layer\clsClassTimeTable.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objTax.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objLeavalChange.cs" />
+    <Compile Include="Business_Layer\clsMarriedStatus.cs" />
+    <Compile Include="Business_Layer\clsClassMaster.cs" />
+    <Compile Include="Business_Layer\clsAttendanceProcess.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objStudentClassTimes.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objPaymentDeatils.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objManualLogEntry.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objBeadBarcode.cs" />
+    <Compile Include="Business_Layer\clsStudentPromotion.cs" />
+    <Compile Include="Business_Layer\clsReportMaster.cs" />
+    <Compile Include="Business_Layer\clsDayTypes.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objStatusMaster.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objLeavalChangeClassTime.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objEmployeeWorkingDays.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objDuePayStudent.cs" />
+    <Compile Include="Business_Layer\clsStudentMaster.cs" />
+    <Compile Include="Business_Layer\clsEmployeeWorkingDays.cs" />
+    <Compile Include="Business_Layer\clsCancelInvoice.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objStudentPromotion.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objCoacherMaster.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objClassTimeTable.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objPaymentMethod.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objAuditLog.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objCompanyMaster.cs" />
+    <Compile Include="Business_Layer\CalendarEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Business_Layer\Property_Layer\objMarriedStatus.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objInvoiceItemAmounts.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objAttendanceProcessCoacher.cs" />
+    <Compile Include="Business_Layer\clsUserRight.cs" />
+    <Compile Include="Business_Layer\clsNBT.cs" />
+    <Compile Include="Business_Layer\clsLeavalChange.cs" />
+    <Compile Include="Business_Layer\clsInvoiceItemAmounts.cs" />
+    <Compile Include="Business_Layer\CalendarCell.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objUserRight.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objDailyPaymentDetails.cs" />
+    <Compile Include="Business_Layer\clsUserMaster.cs" />
+    <Compile Include="Business_Layer\clsStatusMaster.cs" />
+    <Compile Include="Business_Layer\clsLocation.cs" />
+    <Compile Include="Business_Layer\clsExpire.cs" />
+    <Compile Include="Business_Layer\clsBeadBarcode.cs" />
+    <Compile Include="Business_Layer\clsAutoGenerator.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objUserLevel.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objStudentMaster.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objAttendanceProcess.cs" />
+    <Compile Include="Business_Layer\clsUserLevel.cs" />
+    <Compile Include="Business_Layer\clsHoloidayCalender.cs" />
+    <Compile Include="Business_Layer\clsDailyPaymentDetails.cs" />
+    <Compile Include="Business_Layer\clsConfirmStudentAttendance.cs" />
+    <Compile Include="Business_Layer\Property_Layer\objMasterReport.cs" />
+    <Compile Include="Business_Layer\clsReportProcess.cs" />
+    <Reference Include="System.XML" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="app.config" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>
