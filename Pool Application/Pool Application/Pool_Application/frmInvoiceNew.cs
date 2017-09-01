@@ -1120,7 +1120,7 @@
         private void ReportViwer()
         {
             object[,] arrParameter = new object[,] { { "strCopyRight", this.cGlobleVariable.CopyRight }, { "strInvoiceNo", this.txtInvoiceNo.Text } };
-            frmReportViever viever = new frmReportViever(this.SelectionFormularValues(), arrParameter);
+            frmReportViewer viever = new frmReportViewer(this.SelectionFormularValues(), arrParameter);
         }
 
         private string SelectionFormularValues()

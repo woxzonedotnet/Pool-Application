@@ -334,7 +334,7 @@
         {
             int reportID = Convert.ToInt16(strReportID);
             object[,] arrParameter = new object[,] { { "strCompanyName", this.cGlobalVariable.CustomerName }, { "strCopyRight", this.cGlobalVariable.CopyRight }, { "dFromDate", this.dtpFromDate.Value }, { "strReportTitle", strReportName } };
-            new frmReportViever(reportID, this.cGlobalVariable.LocationCode, this.SelectionFormularValues(reportID), arrParameter).Show();
+            new frmReportViewer(reportID, this.cGlobalVariable.LocationCode, this.SelectionFormularValues(reportID), arrParameter).Show();
         }
 
         private void SelectEmployees(bool bEmpStatus)

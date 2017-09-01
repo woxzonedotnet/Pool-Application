@@ -75,7 +75,7 @@
             };
             this.cDailyPaymentDetails.InsertUpdateData(oDailyPaymentDetails);
             object[,] arrParameter = new object[,] { { "strCopyRight", this.cGlobleVariable.CopyRight }, { "strInvoiceNo", this.txtStudentName.Text } };
-            frmReportViever viever = new frmReportViever(this.SelectionFormularValues(), arrParameter, "DP");
+            frmReportViewer viever = new frmReportViewer(this.SelectionFormularValues(), arrParameter, "DP");
             this.cCommenMethods.ClearForm(this);
             this.txtInvoiceNumber.Text = this.cDailyPaymentDetails.GetNextInvNo();
             this.dtpInvoiceDate.Focus();

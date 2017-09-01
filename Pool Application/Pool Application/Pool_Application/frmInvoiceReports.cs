@@ -229,7 +229,7 @@
             }
             object[,] arrParameter = new object[7, 2];
             arrParameter = new object[,] { { "strCompanyName", this.cGlobalVariable.CustomerName }, { "strCopyRight", this.cGlobalVariable.CopyRight }, { "dFromDate", this.dtpFromDate.Value }, { "strReportTitle", strReportName }, { "dToDate", this.dtpToDate.Value } };
-            new frmReportViever(reportID, this.cGlobalVariable.LocationCode, selectionFormular, arrParameter).Show();
+            new frmReportViewer(reportID, this.cGlobalVariable.LocationCode, selectionFormular, arrParameter).Show();
         }
 
         private void LoadReport()

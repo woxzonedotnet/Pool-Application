@@ -11,10 +11,10 @@
     public class clsDBConnect
     {
         private MySqlConnection dbConn = new MySqlConnection();
-        private string strDatabaseName;
-        private string strDBPassword;
-        private string strDBUserName;
-        private string strServerName;
+        public string strDatabaseName="";
+        public string strDBPassword="";
+        public string strDBUserName="";
+        public string strServerName="";
 
         public clsDBConnect()
         {

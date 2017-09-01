@@ -34,7 +34,7 @@
             arrParameter[2, 1] = str2;
             arrParameter[3, 0] = "strReportTitle";
             arrParameter[3, 1] = "ABC Report - " + this.cmbMonths.Text;
-            new frmReportViever("rptABCReport.rpt", selectionFormular, arrParameter).Show();
+            new frmReportViewer("rptABCReport.rpt", selectionFormular, arrParameter).Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -45,7 +45,7 @@
             string selectionFormular = string.Empty;
             object[,] arrParameter = new object[7, 2];
             arrParameter = new object[,] { { "strCompanyName", this.cGlobalVariable.CustomerName }, { "strCopyRight", this.cGlobalVariable.CopyRight }, { "dFromDate", strStartDate }, { "strReportTitle", "Level Wise Summary Report" }, { "dToDate", strEndDate } };
-            new frmReportViever("rptMonthlyLevelWiseSummary.rpt", selectionFormular, arrParameter).Show();
+            new frmReportViewer("rptMonthlyLevelWiseSummary.rpt", selectionFormular, arrParameter).Show();
         }
 
         protected override void Dispose(bool disposing)

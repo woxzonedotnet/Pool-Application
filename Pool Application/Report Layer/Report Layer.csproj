@@ -34,252 +34,559 @@
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Reference Include="CrystalDecisions.CrystalReports.Engine" />
+    <Compile Include="BarcodePrint1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BarcodePrint.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmDailyInComeReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frmDailyInComeReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmDailyInComeReportUserWise1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frmDailyInComeReportUserWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>report1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptABCReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptABCReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptABCReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptCoacherBarcode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptCoacherBarcode1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCoacherBarcode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDailyAbsentReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDailyAbsentReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDailyAbsentReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDailyAttendanceReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDailyAttendanceReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDailyAttendanceReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDailyAttendanceReportCoachers.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDailyAttendanceReportCoachers1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDailyAttendanceReportCoachers.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDailyInComeReportSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDailyInComeReportSummary1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDailyInComeReportSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDailyPaymentDetailsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDailyPaymentDetailsReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDailyPaymentDetailsReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDailyPaymentInvoice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDailyPaymentInvoice1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDailyPaymentInvoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDaliyCoacherAbsentReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDaliyCoacherAbsentReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDaliyCoacherAbsentReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDuePayReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDuePayReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDuePayReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInActiveStudent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInActiveStudent1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInActiveStudent.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInComeSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInComeSummary1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInComeSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInComeSummaryDateUserWise.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInComeSummaryDateUserWise1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInComeSummaryDateUserWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInComeSummaryReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInComeSummaryReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInComeSummaryReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInComeSummaryUserWise.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInComeSummaryUserWise1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInComeSummaryUserWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInvoice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInvoice1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInvoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInvoiceClassTime.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInvoiceClassTime1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInvoiceClassTime.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInvoiceItemReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInvoiceItemReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInvoiceItemReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInvoiceNew.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInvoiceNew1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInvoiceNew.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInvoiceTaxReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInvoiceTaxReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInvoiceTaxReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptLevalChangedReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptLevalChangedReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptLevalChangedReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptMonthlyBreakdownLevelWise.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptMonthlyBreakdownLevelWise1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptMonthlyBreakdownLevelWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptMonthlyLevelWiseSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptMonthlyLevelWiseSummary1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptMonthlyLevelWiseSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptStudentAttendance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptStudentAttendance1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptStudentAttendance.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptStudentAttendanceSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptStudentAttendanceSummary1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptStudentAttendanceSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptStudentDetails.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptStudentDetails1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptStudentDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptStudentEmailList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptStudentEmailList1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptStudentEmailList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="testMonthlyLevelWiseSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="testMonthlyLevelWiseSummary1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>testMonthlyLevelWiseSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="BarcodePrint.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BarcodePrint1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDailyInComeReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>frmDailyInComeReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDailyInComeReportUserWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>frmDailyInComeReportUserWise1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportViewer.resx">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>report11.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptABCReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptABCReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCoacherBarcode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCoacherBarcode1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDailyAbsentReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDailyAbsentReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDailyAttendanceReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDailyAttendanceReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDailyAttendanceReportCoachers.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDailyAttendanceReportCoachers1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDailyInComeReportSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDailyInComeReportSummary1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDailyPaymentDetailsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDailyPaymentDetailsReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDailyPaymentInvoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDailyPaymentInvoice1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDaliyCoacherAbsentReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDaliyCoacherAbsentReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDuePayReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDuePayReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptInActiveStudent.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInActiveStudent1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptInComeSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInComeSummary1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptInComeSummaryDateUserWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInComeSummaryDateUserWise1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptInComeSummaryReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInComeSummaryReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptInComeSummaryUserWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInComeSummaryUserWise1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptInvoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInvoice1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptInvoiceClassTime.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInvoiceClassTime1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptInvoiceItemReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInvoiceItemReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptInvoiceNew.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInvoiceNew1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptInvoiceTaxReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInvoiceTaxReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptLevalChangedReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptLevalChangedReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptMonthlyBreakdownLevelWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMonthlyBreakdownLevelWise1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptMonthlyLevelWiseSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMonthlyLevelWiseSummary1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptStudentAttendance.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptStudentAttendance1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptStudentAttendanceSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptStudentAttendanceSummary1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptStudentDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptStudentDetails1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptStudentEmailList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptStudentEmailList1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testMonthlyLevelWiseSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>testMonthlyLevelWiseSummary1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
-    <Reference Include="CrystalDecisions.ReportSource" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="CrystalDecisions.Shared" />
-    <Reference Include="CrystalDecisions.Windows.Forms" />
     <Reference Include="BusinessLayer">
       <HintPath>..\BusinessLayer\bin\Debug\BusinessLayer.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing" />
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="Global.cs" />
-    <Compile Include="Report_Layer\rptStudentEmailList.cs">
+    <Compile Include="BarcodePrint.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report_Layer\CachedrptStudentEmailList.cs">
+    <Compile Include="CachedBarcodePrint.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report_Layer\BarcodePrint.cs">
+    <Compile Include="CachedfrmDailyInComeReport.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report_Layer\CachedBarcodePrint.cs">
+    <Compile Include="CachedfrmDailyInComeReportUserWise.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report_Layer\rptStudentAttendanceSummary.cs">
+    <Compile Include="Cachedreport1.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report_Layer\CachedrptStudentAttendanceSummary.cs">
+    <Compile Include="CachedrptABCReport.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report_Layer\rptInvoiceNew.cs">
+    <Compile Include="CachedrptCoacherBarcode.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report_Layer\CachedrptInvoiceNew.cs">
+    <Compile Include="CachedrptDailyAbsentReport.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report_Layer\rptInvoiceClassTime.cs">
+    <Compile Include="CachedrptDailyAttendanceReport.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report_Layer\CachedrptInvoiceClassTime.cs">
+    <Compile Include="CachedrptDailyAttendanceReportCoachers.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report_Layer\Properties\Settings.cs" />
-    <Compile Include="Report_Layer\rptMonthlyLevelWiseSummary.cs">
+    <Compile Include="CachedrptDailyInComeReportSummary.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report_Layer\CachedrptMonthlyLevelWiseSummary.cs">
+    <Compile Include="CachedrptDailyPaymentDetailsReport.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report_Layer\rptInComeSummaryReport.cs">
+    <Compile Include="CachedrptDailyPaymentInvoice.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report_Layer\CachedrptInComeSummaryReport.cs">
+    <Compile Include="CachedrptDaliyCoacherAbsentReport.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report_Layer\rptDailyAttendanceReportCoachers.cs">
+    <Compile Include="CachedrptDuePayReport.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report_Layer\CachedrptDailyAttendanceReportCoachers.cs">
+    <Compile Include="CachedrptInActiveStudent.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report_Layer\testMonthlyLevelWiseSummary.cs">
+    <Compile Include="CachedrptInComeSummary.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report_Layer\CachedtestMonthlyLevelWiseSummary.cs">
+    <Compile Include="CachedrptInComeSummaryDateUserWise.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report_Layer\frmReportViever.cs">
+    <Compile Include="CachedrptInComeSummaryReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CachedrptInComeSummaryUserWise.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CachedrptInvoice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CachedrptInvoiceClassTime.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CachedrptInvoiceItemReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CachedrptInvoiceNew.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CachedrptInvoiceTaxReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CachedrptLevalChangedReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CachedrptMonthlyBreakdownLevelWise.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CachedrptMonthlyLevelWiseSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CachedrptStudentAttendance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CachedrptStudentAttendanceSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CachedrptStudentDetails.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CachedrptStudentEmailList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CachedtestMonthlyLevelWiseSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmDailyInComeReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmDailyInComeReportUserWise.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmReportViewer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Report_Layer\rptLevalChangedReport.cs">
+    <Compile Include="frmReportViewer.Designer.cs">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="report1.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report_Layer\CachedrptLevalChangedReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\rptDailyInComeReportSummary.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedrptDailyInComeReportSummary.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\rptInvoiceTaxReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedrptInvoiceTaxReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\report1.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\Cachedreport1.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\rptInComeSummaryDateUserWise.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedrptInComeSummaryDateUserWise.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\rptDuePayReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedrptDuePayReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\rptDailyAbsentReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedrptDailyAbsentReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\rptDailyPaymentInvoice.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedrptDailyPaymentInvoice.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\rptMonthlyBreakdownLevelWise.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedrptMonthlyBreakdownLevelWise.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\rptDaliyCoacherAbsentReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedrptDaliyCoacherAbsentReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\frmDailyInComeReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedfrmDailyInComeReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\rptInActiveStudent.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedrptInActiveStudent.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\rptDailyAttendanceReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedrptDailyAttendanceReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\Program.cs" />
-    <Compile Include="Report_Layer\rptDailyPaymentDetailsReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedrptDailyPaymentDetailsReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\rptStudentAttendance.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedrptStudentAttendance.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\rptInvoice.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedrptInvoice.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\Properties\Resources.cs" />
-    <Compile Include="Report_Layer\rptABCReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedrptABCReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\rptInComeSummaryUserWise.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedrptInComeSummaryUserWise.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\frmDailyInComeReportUserWise.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedfrmDailyInComeReportUserWise.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\rptInvoiceItemReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedrptInvoiceItemReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\rptCoacherBarcode.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedrptCoacherBarcode.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\rptStudentDetails.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedrptStudentDetails.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\rptInComeSummary.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_Layer\CachedrptInComeSummary.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <EmbeddedResource Include="Report_Layer.rptStudentEmailList.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptInvoiceTaxReport.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptDuePayReport.rpt" />
-    <EmbeddedResource Include="Report_Layer.frmDailyInComeReport.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptDaliyCoacherAbsentReport.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptDailyInComeReportSummary.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptDailyAttendanceReportCoachers.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptInvoiceNew.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptABCReport.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptMonthlyLevelWiseSummary.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptCoacherBarcode.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptDailyPaymentDetailsReport.rpt" />
-    <EmbeddedResource Include="Report_Layer.Properties.Resources.resources" />
-    <EmbeddedResource Include="Report_Layer.rptStudentAttendance.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptInComeSummaryUserWise.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptInvoice.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptDailyAttendanceReport.rpt" />
-    <EmbeddedResource Include="Report_Layer.testMonthlyLevelWiseSummary.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptInComeSummaryDateUserWise.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptInComeSummary.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptMonthlyBreakdownLevelWise.rpt" />
-    <EmbeddedResource Include="Report_Layer.frmDailyInComeReportUserWise.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptStudentAttendanceSummary.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptInvoiceItemReport.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptDailyPaymentInvoice.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptStudentDetails.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptInActiveStudent.rpt" />
-    <EmbeddedResource Include="Report_Layer.report1.rpt" />
-    <EmbeddedResource Include="Report_Layer.BarcodePrint.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptInComeSummaryReport.rpt" />
-    <EmbeddedResource Include="Report_Layer.frmReportViever.resources" />
-    <EmbeddedResource Include="Report_Layer.rptLevalChangedReport.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptDailyAbsentReport.rpt" />
-    <EmbeddedResource Include="Report_Layer.rptInvoiceClassTime.rpt" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Database Layer\Database Layer.csproj">
+      <Project>{738fecbe-3245-421a-8f62-4b9afc7225db}</Project>
+      <Name>Database Layer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
 </Project>

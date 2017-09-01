@@ -6,6 +6,7 @@
     using System.Data;
     using System.Drawing;
     using System.IO;
+    using System.Windows.Forms;
 
     public class clsLocation
     {
@@ -41,13 +42,14 @@
                 location.LocationFax = table.Rows[0][8].ToString();
                 location.LocationEmail = table.Rows[0][9].ToString();
                 location.LocationStatus = master.GetStatusByCode(table.Rows[0][10].ToString()).StatusName;
-                if (table.Rows[0][11] != DBNull.Value)
-                {
-                    byte[] buffer = (byte[]) table.Rows[0][11];
-                    int upperBound = buffer.GetUpperBound(0);
-                    MemoryStream stream = new MemoryStream(buffer, 0, upperBound);
-                    location.LocationLogo = Image.FromStream(stream);
-                }
+                location.LocationLogo = null;
+                //if (table.Rows[0][12] != DBNull.Value)
+                //{
+                //    byte[] buffer = (byte[]) table.Rows[0][11];
+                //    int upperBound = buffer.GetUpperBound(0);
+                //    MemoryStream stream = new MemoryStream(buffer, 0, upperBound);
+                //    location.LocationLogo = Image.FromStream(stream);
+                //}
                 location.LocationIsExist = true;
                 return location;
             }

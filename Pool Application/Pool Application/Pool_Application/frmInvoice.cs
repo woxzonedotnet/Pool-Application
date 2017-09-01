@@ -543,7 +543,7 @@
         {
             string strReportName = "rptInvoice.rpt";
             object[,] arrParameter = new object[,] { { "strCopyRight", this.cGlobleVariable.CopyRight }, { "strInvoiceNo", this.txtInvoiceNo.Text } };
-            new frmReportViever(strReportName, this.SelectionFormularValues(), arrParameter).Show();
+            new frmReportViewer(strReportName, this.SelectionFormularValues(), arrParameter).Show();
         }
 
         private string SelectionFormularValues()

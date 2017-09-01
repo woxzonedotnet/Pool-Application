@@ -182,7 +182,7 @@
 
         private void coacherBarcodeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new frmReportViever("rptCoacherBarcode.rpt").Show();
+            new frmReportViewer("rptCoacherBarcode.rpt").Show();
         }
 
         private void companyDetailsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -810,7 +810,7 @@
 
         private void studentBarcodeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new frmReportViever().Show();
+            new frmReportViewer().Show();
         }
 
         private void summaryToolStripMenuItem_Click(object sender, EventArgs e)

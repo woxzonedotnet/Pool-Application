@@ -62,7 +62,7 @@
                 }
                 num4 = num2 - num3;
                 strSQL = string.Concat(new object[] { 
-                    "insert  into tbl_monthly_levelwise_summary(fldClassCode, fldTotalStudents,fldPaidTotal,fldNotPaid,fldNotAttendance,fldPromoteTotal,NewJoinStatus,RejoinStatus) Values('", str, "',", num2, ",", num3, ",", num4, ",", num5, ",", num6, ",", num7, ",", num8, 
+                    "insert  into tbl_monthly_levelwise_summary2(fldClassCode, fldTotalStudents,fldPaidTotal,fldNotPaid,fldNotAttendance,fldPromoteTotal,NewJoinStatus,RejoinStatus) Values('", str, "',", num2, ",", num3, ",", num4, ",", num5, ",", num6, ",", num7, ",", num8, 
                     ")"
                  });
                 this.cDBConnect.ExecuteSQL(strSQL);

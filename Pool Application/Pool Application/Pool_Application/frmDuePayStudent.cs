@@ -98,7 +98,7 @@
         {
             string strReportName = "rptDuePayReport.rpt";
             object[,] arrParameter = new object[,] { { "strCompanyName", this.cGlobleVariable.CustomerName }, { "strCopyRight", this.cGlobleVariable.CopyRight }, { "strReportTitle", "Due Payment Report" }, { "dFromDate", this.dtpFromDate.Value }, { "strLocationCode", this.cGlobleVariable.LocationCode } };
-            new frmReportViever(strReportName, this.SelectionFormularValues(), arrParameter).Show();
+            new frmReportViewer(strReportName, this.SelectionFormularValues(), arrParameter).Show();
         }
 
         private string SelectionFormularValues()

@@ -26,7 +26,7 @@
             objStudentMaster master = new objStudentMaster();
             clsStatusMaster master2 = new clsStatusMaster();
             string str = "fldLocationCode ='" + strLocationCode + "' AND fldStudentNo='" + StudentNo + "'";
-            DataTable table = this.DbConn.SearchData("tbl_student_master", str);
+            DataTable table = DbConn.SearchData("tbl_student_master", str);
             if (table.Rows.Count > 0)
             {
                 master.StudentNo = table.Rows[0][2].ToString();

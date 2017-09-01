@@ -669,7 +669,7 @@
             }
             int reportID = Convert.ToInt16(strReportID);
             object[,] arrParameter = new object[,] { { "strCompanyName", this.cGlobalVariable.CustomerName }, { "strCopyRight", this.cGlobalVariable.CopyRight }, { "dFromDate", this.dtpFromDate.Value }, { "strReportTitle", strReportName }, { "dToDate", this.dtpToDate.Value }, { "strDayType", str.ToString() } };
-            new frmReportViever(reportID, this.cGlobalVariable.LocationCode, this.SelectionFormularValues(reportID), arrParameter).Show();
+            new frmReportViewer(reportID, this.cGlobalVariable.LocationCode, this.SelectionFormularValues(reportID), arrParameter).Show();
         }
 
         private void ReportViwerMaster(string strReportID)
@@ -682,7 +682,7 @@
             int reportID = Convert.ToInt16(strReportID);
             this.oReportMaster = this.cReportMaster.GetReports(reportID);
             object[,] arrParameter = new object[,] { { "strCompanyName", this.cGlobalVariable.CustomerName }, { "strCopyRight", this.cGlobalVariable.CopyRight }, { "strReportTitle", this.lstMaster.SelectedItems[0].SubItems[1].Text }, { "strStatus", this.cmbStudentStatus["fld_Status_Code"].ToString() }, { "strDayType", str.ToString() } };
-            new frmReportViever(this.oReportMaster.ReportName, this.SelectionFormularValuesMaster(reportID, arrParameter[3, 1].ToString()), arrParameter).Show();
+            new frmReportViewer(this.oReportMaster.ReportName, this.SelectionFormularValuesMaster(reportID, arrParameter[3, 1].ToString()), arrParameter).Show();
         }
 
         private void SelectedTab()
