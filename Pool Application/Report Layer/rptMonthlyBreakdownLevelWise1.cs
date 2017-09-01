@@ -119,6 +119,54 @@ public class rptMonthlyBreakdownLevelWise : ReportClass {
             return this.ReportDefinition.Sections[8];
         }
     }
+    
+    [Browsable(false)]
+    [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+    public CrystalDecisions.Shared.IParameterField Parameter_strCompanyName {
+        get {
+            return this.DataDefinition.ParameterFields[0];
+        }
+    }
+    
+    [Browsable(false)]
+    [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+    public CrystalDecisions.Shared.IParameterField Parameter_strCopyRight {
+        get {
+            return this.DataDefinition.ParameterFields[1];
+        }
+    }
+    
+    [Browsable(false)]
+    [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+    public CrystalDecisions.Shared.IParameterField Parameter_dFromDate {
+        get {
+            return this.DataDefinition.ParameterFields[2];
+        }
+    }
+    
+    [Browsable(false)]
+    [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+    public CrystalDecisions.Shared.IParameterField Parameter_strReportTitle {
+        get {
+            return this.DataDefinition.ParameterFields[3];
+        }
+    }
+    
+    [Browsable(false)]
+    [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+    public CrystalDecisions.Shared.IParameterField Parameter_dToDate {
+        get {
+            return this.DataDefinition.ParameterFields[4];
+        }
+    }
+    
+    [Browsable(false)]
+    [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+    public CrystalDecisions.Shared.IParameterField Parameter_strDayType {
+        get {
+            return this.DataDefinition.ParameterFields[5];
+        }
+    }
 }
 
 [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]

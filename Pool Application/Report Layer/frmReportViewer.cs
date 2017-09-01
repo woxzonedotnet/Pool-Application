@@ -114,7 +114,7 @@ namespace Report_Layer
 
         private void frmReportViever_Load(object sender, EventArgs e)
         {
-            //this.LoadReportDeta();
+            this.LoadReportDeta();
             ReportDocument document = new ReportDocument();
 
             if (this.oReportMaster.ReportName != null)
@@ -124,7 +124,8 @@ namespace Report_Layer
             }
             else if (this.strReport != null)
             {
-                document.FileName = Application.StartupPath + @"\Reports\" + this.strReport;
+                //document.FileName = Application.StartupPath + @"\Reports\" + this.strReport;
+                document.FileName = @"E:\Pool Application\Pool Application\Report Layer\" + this.strReport;
             }
             else if (this.strReport == "rptCoacherBarcode.rpt")
             {
