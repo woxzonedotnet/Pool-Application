@@ -10,6 +10,8 @@
         private string _DayType;
         private string _LocationCode;
         private string _StudentNo;
+        private DateTime _InTime;
+        private DateTime _OutTime;
 
         public DateTime AttendanceDate
         {
@@ -20,6 +22,30 @@
             set
             {
                 this._AttendanceDate = value;
+            }
+        }
+
+        public DateTime InTime
+        {
+            get
+            {
+                return this._InTime;
+            }
+            set
+            {
+                this._InTime = value;
+            }
+        }
+
+        public DateTime OutTime
+        {
+            get
+            {
+                return this._OutTime;
+            }
+            set
+            {
+                this._OutTime = value;
             }
         }
 

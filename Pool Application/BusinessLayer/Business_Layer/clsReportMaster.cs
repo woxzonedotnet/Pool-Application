@@ -1,6 +1,7 @@
 ﻿namespace Business_Layer
 {
     using Business_Layer.Property_Layer;
+    using BusinessLayer;
     using Database_Layer;
     using System;
     using System.Data;

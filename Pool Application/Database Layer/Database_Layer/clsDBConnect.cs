@@ -48,6 +48,7 @@
         private void Conn()
         {
             string str = (((("Data Source=" + this.strServerName) + ";Initial Catalog=" + this.strDatabaseName) + ";User ID=" + this.strDBUserName) + ";Password=" + this.strDBPassword) + ";";
+            this.dbConn.Close();
             this.dbConn.ConnectionString = str;
             if (this.dbConn.State == ConnectionState.Open)
             {

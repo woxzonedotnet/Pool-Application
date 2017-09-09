@@ -8,8 +8,9 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <AssemblyName>Pool Application</AssemblyName>
     <OutputType>WinExe</OutputType>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -22,7 +23,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -44,13 +44,19 @@
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>3</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>operator_128.ico</ApplicationIcon>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Reference Include="AxInterop.MSFlexGridLib">
       <HintPath>D:\POOL\WOXZONE\BACKUPS\aaa\NCC POOL SYSTEM\WOXZONE\Pool_System_Setup\AxInterop.MSFlexGridLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.MSHierarchicalFlexGridLib">
+      <HintPath>D:\POOL\WOXZONE\BACKUPS\aaa\NCC POOL SYSTEM\WOXZONE\Pool_System_Setup\AxInterop.MSHierarchicalFlexGridLib.dll</HintPath>
     </Reference>
     <Reference Include="CrystalDecisions.ReportAppServer.XmlSerialize, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -59,17 +65,15 @@
       <HintPath>D:\POOL\WOXZONE\BACKUPS\aaa\NCC POOL SYSTEM\WOXZONE\Pool_System_Setup\Interop.MSFlexGridLib.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Interop.MSHierarchicalFlexGridLib">
+      <HintPath>D:\POOL\WOXZONE\BACKUPS\aaa\NCC POOL SYSTEM\WOXZONE\Pool_System_Setup\Interop.MSHierarchicalFlexGridLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
-    <Reference Include="AxInterop.MSHierarchicalFlexGridLib">
-      <HintPath>D:\POOL\WOXZONE\BACKUPS\aaa\NCC POOL SYSTEM\WOXZONE\Pool_System_Setup\AxInterop.MSHierarchicalFlexGridLib.dll</HintPath>
-    </Reference>
     <Reference Include="System.Data" />
-    <Reference Include="Interop.MSHierarchicalFlexGridLib">
-      <HintPath>D:\POOL\WOXZONE\BACKUPS\aaa\NCC POOL SYSTEM\WOXZONE\Pool_System_Setup\Interop.MSHierarchicalFlexGridLib.dll</HintPath>
-    </Reference>
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="Global.cs" />
     <Compile Include="Pool_Application\frmStudentBookReport.cs">
@@ -286,5 +290,8 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="operator_128.ico" />
   </ItemGroup>
 </Project>

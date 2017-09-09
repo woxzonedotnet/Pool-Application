@@ -103,6 +103,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new Size(0xca, 13);
             this.txtUsername.TabIndex = 13;
+            //this.txtUsername.Text = "admin";
             this.txtUsername.KeyPress += new KeyPressEventHandler(this.txtUsername_KeyPress);
             this.txtPassword.BorderStyle = BorderStyle.None;
             this.txtPassword.Font = new Font("Wingdings", 9f, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -112,6 +113,7 @@
             this.txtPassword.PasswordChar = 'l';
             this.txtPassword.Size = new Size(0xca, 14);
             this.txtPassword.TabIndex = 14;
+            //this.txtPassword.Text = "wss";
             this.txtPassword.KeyPress += new KeyPressEventHandler(this.txtPassword_KeyPress);
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;

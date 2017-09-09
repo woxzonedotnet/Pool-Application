@@ -410,17 +410,25 @@
             this.dgvStudentNameList.Visible = false;
             if (this.txtStudentName.Text != "")
             {
-                DataTable studentsNames = this.cDailyPaymentDetails.GetStudentsNames(this.txtStudentName.Text);
-                this.dgvStudentNameList.Rows.Clear();
-                if (studentsNames.Rows.Count > 0)
+                try
                 {
-                    this.dgvStudentNameList.Visible = true;
-                    for (int i = 0; i < studentsNames.Rows.Count; i++)
+                    DataTable studentsNames = this.cDailyPaymentDetails.GetStudentsNames(this.txtStudentName.Text);
+                    this.dgvStudentNameList.Rows.Clear();
+                    if (studentsNames.Rows.Count > 0)
                     {
-                        this.dgvStudentNameList.Rows.Add();
-                        this.dgvStudentNameList.Rows[i].Cells[0].Value = studentsNames.Rows[i]["fldStudentName"].ToString();
+                        this.dgvStudentNameList.Visible = true;
+                        for (int i = 0; i < studentsNames.Rows.Count; i++)
+                        {
+                            this.dgvStudentNameList.Rows.Add();
+                            this.dgvStudentNameList.Rows[i].Cells[0].Value = studentsNames.Rows[i]["fldStudentName"].ToString();
+                        }
                     }
                 }
+                catch (Exception ex)
+                {
+
+                }
+                
             }
         }
     }

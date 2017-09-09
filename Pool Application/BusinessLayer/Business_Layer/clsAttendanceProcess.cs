@@ -11,7 +11,7 @@
 
         public DataTable AttendanceProcess(objAttendanceProcess oAttendanceProcess)
         {
-            object[,] arrParameter = new object[,] { { "mfldLocationCode", oAttendanceProcess.LocationCode }, { "mfldStudentNo", oAttendanceProcess.StudentNo }, { "mAttendanceDate", oAttendanceProcess.AttendanceDate.ToString("yyyy-MM-dd") } };
+            object[,] arrParameter = new object[,] { { "mfldLocationCode", oAttendanceProcess.LocationCode }, { "mfldStudentNo", oAttendanceProcess.StudentNo }, { "mAttendanceDate", oAttendanceProcess.AttendanceDate.ToString("yyyy-MM-dd") } };//, { "mIntime", oAttendanceProcess.InTime.ToString("HH:MM") }, { "mOutTime", oAttendanceProcess.OutTime.ToString("HH:MM")} };
             return this.DbConn.Execute("sp_attendance_process", arrParameter);
         }
 

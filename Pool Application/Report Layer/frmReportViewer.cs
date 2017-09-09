@@ -11,7 +11,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 using System.Drawing.Printing;
 using System.Reflection;
@@ -120,12 +120,12 @@ namespace Report_Layer
             if (this.oReportMaster.ReportName != null)
             {
                 //document.FileName = Application.StartupPath + @"\Reports\" + this.oReportMaster.ReportName;
-                document.FileName = @"E:\Pool Application\Pool Application\Report Layer\" + this.oReportMaster.ReportName;
+                document.FileName = Application.StartupPath + @"\Reports\" + this.oReportMaster.ReportName;
             }
             else if (this.strReport != null)
             {
                 //document.FileName = Application.StartupPath + @"\Reports\" + this.strReport;
-                document.FileName = @"E:\Pool Application\Pool Application\Report Layer\" + this.strReport;
+                document.FileName = Application.StartupPath + @"\Reports\" + this.strReport;
             }
             else if (this.strReport == "rptCoacherBarcode.rpt")
             {
@@ -137,17 +137,18 @@ namespace Report_Layer
             }
 
             document.RecordSelectionFormula = this.strSelectionFormular;
-            ////database login
-            //ConnectionInfo connectionInfo = new ConnectionInfo();
-            //connectionInfo.ServerName = cDBConnection.strServerName;
-            //connectionInfo.DatabaseName = cDBConnection.strDatabaseName;
-            //connectionInfo.UserID = cDBConnection.strDBUserName;
-            //connectionInfo.Password = cDBConnection.strDBPassword;
-            //connectionInfo.IntegratedSecurity = true;
+            
 
             try
             {
-                document.SetDatabaseLogon("root", "root", "localhost", "pool_system");
+                //document.SetDatabaseLogon("root", "root", "localhost", "pool_system");
+                //database login
+                ConnectionInfo connectionInfo = new ConnectionInfo();
+                connectionInfo.ServerName = cDBConnection.strServerName;
+                connectionInfo.DatabaseName = cDBConnection.strDatabaseName;
+                connectionInfo.UserID = cDBConnection.strDBUserName;
+                connectionInfo.Password = cDBConnection.strDBPassword;
+                connectionInfo.IntegratedSecurity = true;
             }
             catch (Exception ex)
             {

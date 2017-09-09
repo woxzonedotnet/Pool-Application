@@ -681,6 +681,7 @@
             this.dailyToolStripMenuItem.Name = "dailyToolStripMenuItem";
             this.dailyToolStripMenuItem.Size = new Size(0xa6, 0x16);
             this.dailyToolStripMenuItem.Text = "Daily Payments";
+            this.dailyToolStripMenuItem.Visible = false;  /// need to enable
             this.dailyToolStripMenuItem.Click += new EventHandler(this.dailyToolStripMenuItem_Click);
             base.AutoScaleDimensions = new SizeF(6f, 13f);
             base.AutoScaleMode = AutoScaleMode.Font;
