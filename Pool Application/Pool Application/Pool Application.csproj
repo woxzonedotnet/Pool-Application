@@ -69,6 +69,11 @@
       <HintPath>D:\POOL\WOXZONE\BACKUPS\aaa\NCC POOL SYSTEM\WOXZONE\Pool_System_Setup\Interop.MSHierarchicalFlexGridLib.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="msdatasrc, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>D:\POOL\Project\OLD\BACKUP 2016 03 09\Pool_System_Setup\msdatasrc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System" />

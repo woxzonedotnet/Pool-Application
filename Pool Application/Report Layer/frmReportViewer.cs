@@ -141,14 +141,16 @@ namespace Report_Layer
 
             try
             {
-                //document.SetDatabaseLogon("root", "root", "localhost", "pool_system");
+                document.SetDatabaseLogon(cDBConnection.strDBUserName, cDBConnection.strDBPassword, cDBConnection.strServerName, cDBConnection.strDatabaseName);
                 //database login
                 ConnectionInfo connectionInfo = new ConnectionInfo();
-                connectionInfo.ServerName = cDBConnection.strServerName;
-                connectionInfo.DatabaseName = cDBConnection.strDatabaseName;
-                connectionInfo.UserID = cDBConnection.strDBUserName;
-                connectionInfo.Password = cDBConnection.strDBPassword;
-                connectionInfo.IntegratedSecurity = true;
+                //connectionInfo.ServerName = cDBConnection.strServerName;
+                //connectionInfo.DatabaseName = cDBConnection.strDatabaseName;
+                //connectionInfo.UserID = cDBConnection.strDBUserName;
+                //connectionInfo.Password = cDBConnection.strDBPassword;
+                //connectionInfo.IntegratedSecurity = true;
+
+                //SetDBLogonForReport(connectionInfo, document);
             }
             catch (Exception ex)
             {
